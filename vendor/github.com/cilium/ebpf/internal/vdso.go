@@ -14,6 +14,7 @@ import (
 
 var (
 	errAuxvNoVDSO = errors.New("no vdso address found in auxv")
+	NativeEndian = binary.LittleEndian
 )
 
 // vdsoVersion returns the LINUX_VERSION_CODE embedded in the vDSO library
